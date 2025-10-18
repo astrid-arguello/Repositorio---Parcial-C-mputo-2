@@ -1,17 +1,17 @@
 import plotly.express as px
+import pandas as pd
 
-# Datos de ejemplo
-dispositivos = ["Computadora portátil", "Teléfono móvil", "Tableta", "Computadora de escritorio"]
+# Datos
+dispositivos = ['Computadora portátil', 'Teléfono móvil', 'Tableta digital', 'Computadora de escritorio']
 respuestas = [3, 4, 2, 2]
 
-# Crear gráfico de barras
-fig = px.bar(
-    x=dispositivos,
-    y=respuestas,
-    title="Dispositivo más usado por los estudiantes",
-    labels={"x": "Dispositivo", "y": "Número de respuestas"},
-    color=dispositivos
-)
+# Crear DataFrame
+df = pd.DataFrame({'Dispositivo': dispositivos, 'Respuestas': respuestas})
 
-# Mostrar en el navegador
+# Gráfico de barras
+fig = px.bar(df,
+             x='Dispositivo',
+             y='Respuestas',
+             color='Dispositivo',
+             title='Dispositivo más utilizado para tareas académicas')
 fig.show()

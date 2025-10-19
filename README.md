@@ -1,6 +1,3 @@
 # Repositorio---Parcial-C-mputo-2
 
-En este apaetado del readme lo que se agrega es 
-una brebe descripcion del repositorio
-
-no se colora nombre de integrantes
+# El presente repositorio tiene como objetivo demostrar el uso de la librería Plotly en Python para la creación de gráficos estadísticos interactivos ejecutables directamente desde un navegador web. El uso de los gráficos es fundamental para transformar datos brutos especialmente aquellos derivados de encuestas, experimentos o análisis de temas específicos en información comprensible y visualmente atractiva. Para ilustrar el funcionamiento de los gráficos y las distintas posibilidades que ofrece la librería, se realizaron encuestas propias con datos reales, los cuales fueron procesados y utilizados en los ejemplos incluidos dentro de este proyecto.

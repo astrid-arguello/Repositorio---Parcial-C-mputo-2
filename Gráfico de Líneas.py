@@ -1,5 +1,7 @@
+
 import plotly.express as px
 import pandas as pd
+
 
 frecuencias = ['Siempre', 'A veces', 'Rara vez', 'Nunca']
 respuestas = [4, 2, 4, 1]

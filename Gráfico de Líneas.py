@@ -1,19 +1,22 @@
-
 import plotly.express as px
-import pandas as pd
 
-
+# Datos
 frecuencias = ['Siempre', 'A veces', 'Rara vez', 'Nunca']
 respuestas = [4, 2, 4, 1]
+porcentajes = [36.4, 18.2, 36.4, 9.1]  # Ejemplo de tercer valor para el eje Z
 
-df = pd.DataFrame({'Frecuencia': frecuencias, 'Respuestas': respuestas})
+# Crear gráfico 3D de dispersión
+fig = px.scatter_3d(
+    x=frecuencias,
+    y=respuestas,
+    z=porcentajes,
+    color=frecuencias,
+    size=respuestas,
+    title='Frecuencia de uso de herramientas de colaboración (Gráfico 3D)'
+)
 
-fig = px.line(df,
-              x='Frecuencia',
-              y='Respuestas',
-              markers=True,
-              title='Frecuencia de uso de herramientas de colaboración en línea')
+# Mostrar gráfico
 fig.show()
 
-#El gráfico de líneas se utiliza para mostrar la evolución de un valor a lo largo del tiempo. 
-#Es útil para representar tendencias, cambios o progresos en períodos determinados.
+# El gráfico 3D permite visualizar tres dimensiones de datos al mismo tiempo (X, Y, Z).
+# Es útil para analizar relaciones complejas o comparar varios valores simultáneamente.

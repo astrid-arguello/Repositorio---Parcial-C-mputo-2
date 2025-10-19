@@ -4,8 +4,12 @@ import pandas as pd
 plataformas = ['Google Classroom', 'Moodle', 'Microsoft Teams', 'Otra plataforma']
 respuestas = [4, 2, 3, 2]
 
+# Esta linea de codigo es la que estructura los datos de forma tabular 
+#para que la libreria la pueda entender y asi tabularla facilmente
 df = pd.DataFrame({'Plataforma': plataformas, 'Respuestas': respuestas})
 
+#En estas lineas de codigos son las encargadas de crear
+# y mostrar el grafico que se visualiza la la distribucion de los datos obtenidos de la encuesta
 fig = px.pie(df,
              names='Plataforma',
              values='Respuestas',

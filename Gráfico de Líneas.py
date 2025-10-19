@@ -12,3 +12,6 @@ fig = px.line(df,
               markers=True,
               title='Frecuencia de uso de herramientas de colaboración en línea')
 fig.show()
+
+#El gráfico de líneas se utiliza para mostrar la evolución de un valor a lo largo del tiempo. 
+#Es útil para representar tendencias, cambios o progresos en períodos determinados.

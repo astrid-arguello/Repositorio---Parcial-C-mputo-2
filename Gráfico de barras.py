@@ -15,3 +15,6 @@ fig = px.bar(df,
              color='Dispositivo',
              title='Dispositivo más utilizado para tareas académicas')
 fig.show()
+
+#Este gráfico muestra la comparación de categorías usando barras verticales.
+#Es ideal para representar valores de forma visual y sencilla, como ventas, cantidades o resultados.#

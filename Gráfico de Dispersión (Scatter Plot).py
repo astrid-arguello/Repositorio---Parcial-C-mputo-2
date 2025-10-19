@@ -13,3 +13,6 @@ fig = px.scatter(df,
                  color='Software',
                  title='Tipo de software más útil en la formación académica')
 fig.show()
+
+#El gráfico de dispersión muestra la relación entre dos variables numéricas. 
+#Sirve para observar patrones, correlaciones o comportamientos entre los datos.

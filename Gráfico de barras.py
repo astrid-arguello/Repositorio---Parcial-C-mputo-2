@@ -1,14 +1,16 @@
+#lineas de exportancion de la libreria 
 import plotly.express as px
 import pandas as pd
 
-# Datos
+#  Estas lineas de comando son en donde van los datos de entrada
+# que son los datos que llevara el grafico de barra
 dispositivos = ['Computadora portátil', 'Teléfono móvil', 'Tableta digital', 'Computadora de escritorio']
 respuestas = [3, 4, 2, 2]
 
-# Crear DataFrame
+# Esta linea de comando es la que estructura los datos para la generacion o creacion del grafico
 df = pd.DataFrame({'Dispositivo': dispositivos, 'Respuestas': respuestas})
 
-# Gráfico de barras
+# Estas lineas son las encargadas de crear y mostrar el graficode dispercion 
 fig = px.bar(df,
              x='Dispositivo',
              y='Respuestas',

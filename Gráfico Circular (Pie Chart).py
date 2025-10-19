@@ -1,20 +1,19 @@
 import plotly.express as px
-import pandas as pd
 
+# Datos directamente en listas
 plataformas = ['Google Classroom', 'Moodle', 'Microsoft Teams', 'Otra plataforma']
 respuestas = [4, 2, 3, 2]
 
-# Esta linea de codigo es la que estructura los datos de forma tabular 
-#para que la libreria la pueda entender y asi tabularla facilmente
-df = pd.DataFrame({'Plataforma': plataformas, 'Respuestas': respuestas})
+# Crear gráfico de pastel
+fig = px.pie(
+    names=plataformas,
+    values=respuestas,
+    title='Plataforma educativa más utilizada'
+)
 
-#En estas lineas de codigos son las encargadas de crear
-# y mostrar el grafico que se visualiza la la distribucion de los datos obtenidos de la encuesta
-fig = px.pie(df,
-             names='Plataforma',
-             values='Respuestas',
-             title='Plataforma educativa más utilizada')
+# Mostrar gráfico
 fig.show()
 
-#El gráfico de pastel o circular representa proporciones o porcentajes de un total.
-#Es perfecto para visualizar cómo se divide un conjunto en partes.
+# El gráfico de pastel o circular representa proporciones o porcentajes de un total.
+# Es perfecto para visualizar cómo se divide un conjunto en partes.
+
